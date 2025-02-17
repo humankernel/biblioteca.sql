@@ -1,0 +1,21 @@
+{
+  "name": "populate-database-tool",
+  "module": "src/index.ts",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "scripts": {
+    "populate": "bun run src/app.ts"
+  },
+  "peerDependencies": {
+    "typescript": "5.0.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "@faker-js/faker": "8.3.1",
+    "drizzle-kit": "0.20.6",
+    "drizzle-orm": "0.29.0",
+    "postgres": "3.4.3",
+    "tslog": "4.9.2"
+  }
+}

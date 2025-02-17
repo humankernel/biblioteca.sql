@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+
+		<title>presentation</title>
+
+		<link rel="stylesheet" href="dist/reset.css" />
+		<link rel="stylesheet" href="dist/reveal.css" />
+		<link rel="stylesheet" href="dist/theme/night.css" />
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" />
+
+		<style>
+			.text-gradient {
+				background: linear-gradient(to right, #d1bd0d, #d33d0f);
+				-webkit-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+				font-weight: 600;
+			}
+			img {
+				border-radius: 15px;
+				border: 4px solid rgba(255, 255, 255, 0.1);
+				box-shadow: 1rem;
+			}
+			.sub {
+				font-size: 1.6rem;
+				color: rgba(255, 255, 255, 0.6);
+			}
+			.glass {
+				background-color: rgb(255, 255, 255, 0.3);
+				backdrop-filter: blur(10px);
+			}
+			code {
+				border-radius: 15px;
+				border: 4px solid rgba(255, 255, 255, 0.1);
+				box-shadow: 1rem;
+			}
+			code::-webkit-scrollbar {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- PRESENTATION -->
+				<section>
+					<section>
+						<img src="./dist/img/bnjm-2.jpg" width="900" />
+						<h1 style="font-size: 4rem">
+							Diseñando una
+							<span class="text-gradient">DB</span> para la
+							<span>📖 Biblioteca Nacional Jose Marti</span>
+						</h1>
+						<p
+							style="
+								font-size: 1.9rem;
+								color: rgba(255, 255, 255, 0.6);
+								border-radius: 100px;
+								width: fit-content;
+								margin-inline: auto;
+								padding: 10px;
+								padding-left: 20px;
+							"
+							class="glass"
+						>
+							por Joaquin Rivas Sanchez 😎
+						</p>
+					</section>
+					<section>
+						<img src="./dist/img/bnjm-1.jpg" alt="" />
+						<img src="./dist/img/bnjm-3.jpg" alt="" />
+						<img src="./dist/img/bnjm-4.jpg" alt="" />
+					</section>
+					<section>
+						<img src="./dist/img/library.jpg" width="800" />
+					</section>
+				</section>
+
+				<!-- INTRODUCTION -->
+				<section>
+					<section style="font-size: 1.9rem" data-auto-animate>
+						<p>
+							<span class="text-gradient"
+								>La Biblioteca Nacional</span
+							>
+							es una de las bases de datos mas grandes e
+							importantes del país
+						</p>
+						<p style="opacity: 0.6">
+							Esta investigación se centra en
+							<span class="text-gradient">mejorar</span> los
+							sistemas de bases de datos de esta, ya que esto es
+							<u>
+								crucial para la preservación y acceso eficiente
+								a su vasto acervo</u
+							>.
+						</p>
+						<p style="opacity: 0.6">
+							A través de una entrevista detallada, identificamos
+							desafíos en la gestión de datos, como
+							<b> sistemas desactualizados y malas practicas</b>.
+						</p>
+						<p style="opacity: 0.6">
+							<span class="text-gradient">Nuestra meta</span>
+							es
+							<u
+								>proponer soluciones que fortalezcan la
+								eficiencia y eficacia de estos sistemas</u
+							>, contribuyendo así a la misión fundamental de esta
+							institución cultural.
+						</p>
+					</section>
+					<section style="font-size: 1.9rem" data-auto-animate>
+						<p style="opacity: 0.6">
+							<span class="text-gradient"
+								>La Biblioteca Nacional</span
+							>
+							es una de las bases de datos mas grandes e
+							importantes del país
+						</p>
+						<p>
+							Esta investigación se centra en
+							<span class="text-gradient">mejorar</span> los
+							sistemas de bases de datos de esta, ya que esto es
+							<u>
+								crucial para la preservación y acceso eficiente
+								a su vasto acervo</u
+							>.
+						</p>
+						<p style="opacity: 0.6">
+							A través de una entrevista detallada, identificamos
+							desafíos en la gestión de datos, como
+							<b> sistemas desactualizados y malas practicas</b>.
+						</p>
+						<p style="opacity: 0.6">
+							<span class="text-gradient">Nuestra meta</span>
+							es
+							<u
+								>proponer soluciones que fortalezcan la
+								eficiencia y eficacia de estos sistemas</u
+							>, contribuyendo así a la misión fundamental de esta
+							institución cultural.
+						</p>
+					</section>
+					<section style="font-size: 1.9rem" data-auto-animate>
+						<p style="opacity: 0.6">
+							<span class="text-gradient"
+								>La Biblioteca Nacional</span
+							>
+							es una de las bases de datos mas grandes e
+							importantes del país
+						</p>
+						<p style="opacity: 0.6">
+							Esta investigación se centra en
+							<span class="text-gradient">mejorar</span> los
+							sistemas de bases de datos de esta, ya que esto es
+							<u>
+								crucial para la preservación y acceso eficiente
+								a su vasto acervo</u
+							>.
+						</p>
+						<p>
+							A través de una entrevista detallada, identificamos
+							desafíos en la gestión de datos, como
+							<b> sistemas desactualizados y malas practicas</b>.
+						</p>
+						<p style="opacity: 0.6">
+							<span class="text-gradient">Nuestra meta</span>
+							es
+							<u
+								>proponer soluciones que fortalezcan la
+								eficiencia y eficacia de estos sistemas</u
+							>, contribuyendo así a la misión fundamental de esta
+							institución cultural.
+						</p>
+					</section>
+					<section style="font-size: 1.9rem" data-auto-animate>
+						<p style="opacity: 0.6">
+							<span class="text-gradient"
+								>La Biblioteca Nacional</span
+							>
+							es una de las bases de datos mas grandes e
+							importantes del país
+						</p>
+						<p style="opacity: 0.6">
+							Esta investigación se centra en
+							<span class="text-gradient">mejorar</span> los
+							sistemas de bases de datos de esta, ya que esto es
+							<u>
+								crucial para la preservación y acceso eficiente
+								a su vasto acervo</u
+							>.
+						</p>
+						<p style="opacity: 0.6">
+							A través de una entrevista detallada, identificamos
+							desafíos en la gestión de datos, como
+							<b> sistemas desactualizados y malas practicas</b>.
+						</p>
+						<p>
+							<span class="text-gradient">Nuestra meta</span>
+							es
+							<u
+								>proponer soluciones que fortalezcan la
+								eficiencia y eficacia de estos sistemas</u
+							>, contribuyendo así a la misión fundamental de esta
+							institución cultural.
+						</p>
+					</section>
+				</section>
+
+				<!-- PROBLEMATIC -->
+				<section>
+					<section data-auto-animate>
+						<p>
+							Se realizo una
+							<span class="text-gradient">entrevista</span> a
+							<span>Maribel Fleites</span> encargada de gestionar
+							el Dpto de Automatización
+						</p>
+					</section>
+
+					<section data-auto-animate>
+						<p>
+							Ella me explico el <b>sistema interno</b> que usa la
+							Biblioteca que usan par gestionar su información
+						</p>
+					</section>
+
+					<section data-auto-animate>
+						<p style="font-size: 2.4rem; opacity: 0.7">
+							Ella me explico el <b>sistema interno</b> que usa la
+							Biblioteca que usan par gestionar su información
+						</p>
+						<p style="font-size: 2.9rem">
+							En <u>esencia y resumiendo</u> su sistema se basa en
+							lo siguiente
+						</p>
+					</section>
+
+					<section data-auto-animate>
+						<ul>
+							<li>
+								📚 Usan un software creado por
+								<b>bibliotecarios</b>
+							</li>
+						</ul>
+					</section>
+
+					<section data-auto-animate>
+						<ul>
+							<li>
+								📚 Usan un software creado por
+								<b>bibliotecarios</b>
+							</li>
+							<li>
+								🪨 Usan el lenguaje <b>PHP</b> y el sistema de
+								BD <b>ABC</b>
+							</li>
+						</ul>
+					</section>
+
+					<section data-auto-animate>
+						<img src="./dist/img/software.jpg" width="800" />
+					</section>
+
+					<section data-auto-animate>
+						<p>
+							La entrevistada recalco la <b>necesidad</b> de un
+							software mas moderno que tenga la
+							<u>capacidad de recibir actualizaciones</u>
+							periódicas a traves de internet
+						</p>
+					</section>
+				</section>
+
+				<!-- KEY CONCEPTS -->
+				<section>
+					<section>
+						<h3>
+							<span class="text-gradient">Conceptos Clave</span> a
+							entender de una Biblioteca
+						</h3>
+					</section>
+					<section data-auto-animate>
+						<ol style="list-style: none">
+							<li>Que es una <b>Sala</b>? 🤔</li>
+						</ol>
+					</section>
+					<section data-auto-animate>
+						<ol style="list-style: none">
+							<li style="opacity: 0.7">
+								Que es una <b>Sala</b>? 🤔
+							</li>
+							<li>Que es una <b>Colección</b>? 📖</li>
+						</ol>
+					</section>
+					<section data-auto-animate>
+						<ol style="list-style: none">
+							<li style="opacity: 0.7">
+								Que es una <b>Sala</b>? 🤔
+							</li>
+							<li style="opacity: 0.7">
+								Que es una <b>Colección</b>? 📖
+							</li>
+							<li>Que <b>Documentos</b> guardan? 📑</li>
+						</ol>
+					</section>
+					<section data-auto-animate>
+						<ol style="list-style: none">
+							<li style="opacity: 0.7">
+								Que es una <b>Sala</b>? 🤔
+							</li>
+							<li style="opacity: 0.7">
+								Que es una <b>Colección</b>? 📖
+							</li>
+							<li style="opacity: 0.7">
+								Que <b>Documentos</b> guardan? 📑
+							</li>
+							<li>
+								Como funciona el proceso de <b>prestamos</b>?
+							</li>
+						</ol>
+					</section>
+				</section>
+
+				<!-- INTERVIEW -->
+				<section>
+					<h3>Preguntas Realizadas</h3>
+
+					<ul>
+						<li>Existen salas en la biblioteca?</li>
+						<li>Que existe dentro de cada Sala?</li>
+						<li>Que documentos existen la biblioteca?</li>
+						<li>Que informacion se les pide a los usuarios</li>
+						<li>Que problematica presenta la biblioteca</li>
+						<li>Como funciona el proceso de prestamos</li>
+						<li>Quienes son los clientes validos para prestar</li>
+					</ul>
+				</section>
+
+				<!-- ENTITIES -->
+				<section>
+					<section>
+						<h3>Entidades y Relaciones Identificadas 🔍</h3>
+					</section>
+					<!-- Colección -->
+					<section data-auto-animate>
+						<h3 class="text-gradient">Colección</h3>
+						<p>De cada una se conoce:</p>
+						<ul>
+							<li>codigo que la identifica</li>
+							<li>sala a la que pertenece</li>
+							<li>nombre</li>
+							<li>correos de contacto</li>
+							<li>descripcion</li>
+							<li>tipo de coleccion</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<h3 class="text-gradient">Colección</h3>
+						<ul style="font-size: 1.6rem">
+							<li>codigo que la identifica</li>
+							<p class="sub">(ej: MED)</p>
+							<li>sala a la que pertenece</li>
+							<p class="sub">(ej: Sala 1)</p>
+							<li>nombre</li>
+							<p class="sub">(ej: Colección Cubana)</p>
+							<li>correos de contacto</li>
+							<p class="sub">
+								(ej:
+								<a href="emailto:coleccioncubana@bnjm.cu"
+									>coleccioncubana@bnjm.cu</a
+								>
+								)
+							</p>
+							<li>descripcion</li>
+							<li>tipo de coleccion</li>
+							<p class="sub">(ej: Especial)</p>
+						</ul>
+					</section>
+
+					<!-- Sala -->
+					<section data-auto-animate>
+						<h3 class="text-gradient">Sala</h3>
+						<p>De cada una se conoce:</p>
+						<ul>
+							<li>codigo que la identifica</li>
+							<li>nombre</li>
+							<li>localizacion</li>
+							<li>correos de contacto</li>
+							<li>telefonos de contacto</li>
+							<li>descripcion</li>
+							<li>metodo de acceso</li>
+							<li>servicios</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<h3 class="text-gradient">Sala</h3>
+						<ul style="font-size: 1.6rem">
+							<li>codigo que la identifica</li>
+							<p class="sub">(ej: S01)</p>
+							<li>nombre</li>
+							<p class="sub">(ej: Sala Circundante)</p>
+							<li>localizacion</li>
+							<p class="sub">(ej: CAR 2018-0070 C)</p>
+							<li>correos de contacto</li>
+							<li>telefonos de contacto</li>
+							<li>descripcion</li>
+							<li>metodo de acceso ⬇️</li>
+							<p class="sub">(ej: carné de usuario)</p>
+							<li>servicios</li>
+							<p class="sub">(ej: prestamos)</p>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<img src="./dist/img/rooms.jpg" width="700" />
+					</section>
+
+					<!-- Access -->
+					<section>
+						<h3>Acceso 🃏</h3>
+					</section>
+					<section>
+						<img src="./dist/img/access.jpg" width="600" />
+					</section>
+					<section>
+						<img src="./dist/img/access2.jpg" width="600" />
+					</section>
+
+					<!-- Loan -->
+					<section>
+						<h3>Prestamo</h3>
+						<p>
+							En la Biblioteca, los miembros
+							<span class="text-gradient"
+								>Investigador, Profesional</span
+							>
+							pueden llevar a casa hasta tres documentos por 15
+							días, con posibilidad de extensión, siempre que no
+							sean de colecciones reservadas o especializadas
+							📚🏠.
+						</p>
+						<p>
+							También ofrecen un servicio de
+							<span class="text-gradient">
+								préstamo interbibliotecario
+							</span>
+							para obtener documentos de otras bibliotecas 🌐🔁.
+						</p>
+					</section>
+					<section>
+						<img src="./dist/img/loan.jpg" width="400" />
+					</section>
+					<section>
+						<img src="./dist/img/loan2.jpg" width="600" />
+					</section>
+
+					<!-- Services -->
+					<section>
+						<h3>📚 Servicios</h3>
+						<p>
+							La <u>Biblioteca Nacional</u> 📚 ofrece una variedad
+							de servicios tanto al público en general 👥 como a
+							otras instituciones 🏢.
+						</p>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							```sql [1: 2|3|4|5|6|7|]
+							CREATE TYPE servicio AS ENUM (
+								'Consulta en sala 📖',  
+								'Biblioteca digital 💻',  
+								'Programación cultural 🎭', 
+								'Referencias Bibliograficas 📝',  
+								'Préstamo interbibliotecario 🔄',  
+								'Preservación del patrimonio bibliográfico nacional 🏛️'  
+								);
+							```
+						</textarea
+						>
+					</section>
+
+					<!-- Member -->
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient"> Miembro </span>
+							🤡
+						</h3>
+					</section>
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient"> Miembro </span>
+							🧑‍🦱
+						</h3>
+						<ul style="font-size: 1.6rem">
+							<li>identificador</li>
+							<li>nombre</li>
+							<li>edad</li>
+							<li>categoria</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient"> Miembro </span>
+							🧑‍🦱
+						</h3>
+						<ul style="font-size: 1.6rem">
+							<li>identificador</li>
+							<li>nombre</li>
+							<p class="sub">(ej: Jorge)</p>
+							<li>edad</li>
+							<p class="sub">(ej: 21)</p>
+							<li>categoria</li>
+							<p class="sub">(ej: Investigador)</p>
+						</ul>
+					</section>
+
+					<!-- Document -->
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient">Documentos</span> 📖
+						</h3>
+					</section>
+
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient">Documentos</span> 📖
+						</h3>
+						<ul style="font-size: 1.6rem">
+							<li>titulo</li>
+							<li>autores</li>
+							<li>fecha</li>
+							<li>editorial</li>
+							<li>lugar de publicacion</li>
+							<li>idioma</li>
+							<li>formato</li>
+							<li>materia</li>
+							<li>resumen</li>
+							<li>nota</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient">Documentos</span> 📖
+						</h3>
+						<ul style="font-size: 1.6rem">
+							<li>titulo</li>
+							<li>autores</li>
+							<li>fecha</li>
+							<li>editorial</li>
+							<li>lugar de publicacion</li>
+							<p class="sub">(ej: La Habana)</p>
+							<li>idioma</li>
+							<p class="sub">(ej: Español)</p>
+							<li>formato</li>
+							<p class="sub">(ej: Digital)</p>
+							<li>materia</li>
+							<p class="sub">(ej: "Historia")</p>
+							<li>resumen</li>
+							<li>nota</li>
+						</ul>
+					</section>
+
+					<section>
+						<table style="font-size: 1.6rem">
+							<tr>
+								<th>
+									Tipo de
+									<span class="text-gradient">Documento</span>
+								</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td>Música</td>
+								<td>🎵</td>
+							</tr>
+							<tr>
+								<td>Libros</td>
+								<td>📚</td>
+							</tr>
+							<tr>
+								<td>Arte</td>
+								<td>🎨</td>
+							</tr>
+							<tr>
+								<td>Carteles</td>
+								<td>🖼️</td>
+							</tr>
+							<tr>
+								<td>Etnología</td>
+								<td>🌍</td>
+							</tr>
+							<tr>
+								<td>Manuscritos</td>
+								<td>📜</td>
+							</tr>
+							<tr>
+								<td>Mapas</td>
+								<td>🗺️</td>
+							</tr>
+							<tr>
+								<td>Mediateca (físico o digital)</td>
+								<td>💿</td>
+							</tr>
+							<tr>
+								<td>Referencia</td>
+								<td>🔍</td>
+							</tr>
+							<tr>
+								<td>Fotos</td>
+								<td>📷</td>
+							</tr>
+							<tr>
+								<td>Fichas</td>
+								<td>🗂️</td>
+							</tr>
+						</table>
+					</section>
+				</section>
+
+				<!-- MR -->
+				<section>
+					<section>
+						<h3>
+							<span class="text-gradient">Modelo Relacional</span>
+						</h3>
+					</section>
+					<section data-auto-animate>
+						<ol>
+							<li>
+								library (id_library, name_library,
+								location_library, description_library, website)
+							</li>
+							<li>
+								room (id_room, id_library, name_room,
+								location_room, description_room, access_method,
+								phone_extension)
+							</li>
+							<li>
+								collection (id_collection, id_room,
+								name_collection, description_collection,
+								type_collection)
+							</li>
+							<li>
+								phone (id_phone, phone_number,
+								description_phone)
+							</li>
+							<li>phone_library (id_phone, id_library)</li>
+							<li>phone_room (id_phone, id_room)</li>
+							<li>email (email, description_email)</li>
+							<li>email_library (email, id_library)</li>
+							<li>email_room (email, id_room)</li>
+							<li>email_collection (email, id_collection)</li>
+							<li>
+								document (id_document, number_document, title,
+								created_at, editorial, publication_place,
+								language, format, subject, summary,
+								is_patrimony, note)
+							</li>
+							<li>
+								collection_document (id_collection, id_document)
+							</li>
+							<li>manuscript (id_document, period)</li>
+							<li>
+								map (id_document, dimension_height,
+								dimension_width)
+							</li>
+							<li>
+								picture (id_document, dimension_height,
+								dimension_width)
+							</li>
+							<li>
+								paint (id_document, technique, dimension_height,
+								dimension_width)
+							</li>
+							<li>
+								media (id_document, genre, director, producer,
+								duration)
+							</li>
+							<li>
+								music (id_document, genre, performer, composer,
+								duration)
+							</li>
+							<li>reference (id_document, serial)</li>
+							<li>magazine (id_document, editor, issn)</li>
+							<li>
+								book (id_document, genre, issn, isbn, dewey)
+							</li>
+							<li>
+								author (id_author, name_author, country_author,
+								description_author)
+							</li>
+							<li>author_document (id_author, id_document)</li>
+							<li>
+								member (id_member, name, age, country, category)
+							</li>
+							<li>researcher (id_member)</li>
+							<li>professional (id_member, organization)</li>
+							<li>student (id_member, school)</li>
+							<li>
+								service (id_service, description_service,
+								type_service)
+							</li>
+							<li>service_room (id_service, id_room)</li>
+							<li>service_member (id_service, id_member)</li>
+							<li>
+								loan (id_service, id_document, term, start_date,
+								end_date, status, type_loan)
+							</li>
+							<li>
+								loan_researcher (id_service, id_document,
+								id_member)
+							</li>
+							<li>
+								loan_professional (id_service, id_document,
+								id_member)
+							</li>
+							<li>
+								loan_library (id_service, id_document,
+								id_library, id_library2)
+							</li>
+							<li>
+								fine (id_fine, id_service, id_document, penalty,
+								fee)
+							</li>
+						</ol>
+					</section>
+					<section data-auto-animate>
+						<ol style="font-size: 2rem">
+							<li>
+								library (id_library, name_library,
+								location_library, description_library, website)
+							</li>
+							<li>
+								room (id_room, id_library, name_room,
+								location_room, description_room, access_method,
+								phone_extension)
+							</li>
+							<li>
+								collection (id_collection, id_room,
+								name_collection, description_collection,
+								type_collection)
+							</li>
+							<li>
+								phone (id_phone, phone_number,
+								description_phone)
+							</li>
+							<li>phone_library (id_phone, id_library)</li>
+							<li>phone_room (id_phone, id_room)</li>
+							<li>email (email, description_email)</li>
+							<li>email_library (email, id_library)</li>
+							<li>email_room (email, id_room)</li>
+							<li>email_collection (email, id_collection)</li>
+							<li>
+								document (id_document, number_document, title,
+								created_at, editorial, publication_place,
+								language, format, subject, summary,
+								is_patrimony, note)
+							</li>
+							<li>
+								collection_document (id_collection, id_document)
+							</li>
+							<li>manuscript (id_document, period)</li>
+							<li>
+								map (id_document, dimension_height,
+								dimension_width)
+							</li>
+							<li>
+								picture (id_document, dimension_height,
+								dimension_width)
+							</li>
+							<li>
+								paint (id_document, technique, dimension_height,
+								dimension_width)
+							</li>
+							<li>
+								media (id_document, genre, director, producer,
+								duration)
+							</li>
+							<li>
+								music (id_document, genre, performer, composer,
+								duration)
+							</li>
+							<li>reference (id_document, serial)</li>
+							<li>magazine (id_document, editor, issn)</li>
+							<li>
+								book (id_document, genre, issn, isbn, dewey)
+							</li>
+							<li>
+								author (id_author, name_author, country_author,
+								description_author)
+							</li>
+							<li>author_document (id_author, id_document)</li>
+							<li>
+								member (id_member, name, age, country, category)
+							</li>
+							<li>researcher (id_member)</li>
+							<li>professional (id_member, organization)</li>
+							<li>student (id_member, school)</li>
+							<li>
+								service (id_service, description_service,
+								type_service)
+							</li>
+							<li>service_room (id_service, id_room)</li>
+							<li>service_member (id_service, id_member)</li>
+							<li>
+								loan (id_service, id_document, term, start_date,
+								end_date, status, type_loan)
+							</li>
+							<li>
+								loan_researcher (id_service, id_document,
+								id_member)
+							</li>
+							<li>
+								loan_professional (id_service, id_document,
+								id_member)
+							</li>
+							<li>
+								loan_library (id_service, id_document,
+								id_library, id_library2)
+							</li>
+							<li>
+								fine (id_fine, id_service, id_document, penalty,
+								fee)
+							</li>
+						</ol>
+					</section>
+					<section data-auto-animate>
+						<ol style="font-size: 0.8rem">
+							<li>
+								library (id_library, name_library,
+								location_library, description_library, website)
+							</li>
+							<li>
+								room (id_room, id_library, name_room,
+								location_room, description_room, access_method,
+								phone_extension)
+							</li>
+							<li>
+								collection (id_collection, id_room,
+								name_collection, description_collection,
+								type_collection)
+							</li>
+							<li>
+								phone (id_phone, phone_number,
+								description_phone)
+							</li>
+							<li>phone_library (id_phone, id_library)</li>
+							<li>phone_room (id_phone, id_room)</li>
+							<li>email (email, description_email)</li>
+							<li>email_library (email, id_library)</li>
+							<li>email_room (email, id_room)</li>
+							<li>email_collection (email, id_collection)</li>
+							<li>
+								document (id_document, number_document, title,
+								created_at, editorial, publication_place,
+								language, format, subject, summary,
+								is_patrimony, note)
+							</li>
+							<li>
+								collection_document (id_collection, id_document)
+							</li>
+							<li>manuscript (id_document, period)</li>
+							<li>
+								map (id_document, dimension_height,
+								dimension_width)
+							</li>
+							<li>
+								picture (id_document, dimension_height,
+								dimension_width)
+							</li>
+							<li>
+								paint (id_document, technique, dimension_height,
+								dimension_width)
+							</li>
+							<li>
+								media (id_document, genre, director, producer,
+								duration)
+							</li>
+							<li>
+								music (id_document, genre, performer, composer,
+								duration)
+							</li>
+							<li>reference (id_document, serial)</li>
+							<li>magazine (id_document, editor, issn)</li>
+							<li>
+								book (id_document, genre, issn, isbn, dewey)
+							</li>
+							<li>
+								author (id_author, name_author, country_author,
+								description_author)
+							</li>
+							<li>author_document (id_author, id_document)</li>
+							<li>
+								member (id_member, name, age, country, category)
+							</li>
+							<li>researcher (id_member)</li>
+							<li>professional (id_member, organization)</li>
+							<li>student (id_member, school)</li>
+							<li>
+								service (id_service, description_service,
+								type_service)
+							</li>
+							<li>service_room (id_service, id_room)</li>
+							<li>service_member (id_service, id_member)</li>
+							<li>
+								loan (id_service, id_document, term, start_date,
+								end_date, status, type_loan)
+							</li>
+							<li>
+								loan_researcher (id_service, id_document,
+								id_member)
+							</li>
+							<li>
+								loan_professional (id_service, id_document,
+								id_member)
+							</li>
+							<li>
+								loan_library (id_service, id_document,
+								id_library, id_library2)
+							</li>
+							<li>
+								fine (id_fine, id_service, id_document, penalty,
+								fee)
+							</li>
+						</ol>
+					</section>
+				</section>
+
+				<!-- DER -->
+				<section>
+					<section>
+						<h3>
+							<span class="text-gradient">
+								Diagrama Entidad Relación
+							</span>
+						</h3>
+					</section>
+					<section>
+						<img src="/dist/img/erd.svg" width="800" />
+					</section>
+				</section>
+
+				<!-- CODE -->
+				<section>
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient">DDL</span> (create
+							table)
+						</h3>
+					</section>
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient">DDL</span> (create
+							table)
+						</h3>
+						<img src="./dist/img/code.png" width="700" />
+					</section>
+				</section>
+
+				<!-- POPULATION -->
+				<section>
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient"
+								>Método de Población</span
+							>
+						</h3>
+					</section>
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient"
+								>Método de Población</span
+							>
+						</h3>
+						<p style="opacity: 0.7; font-size: 1.9rem">
+							Se opto por escoger lo siguiente
+						</p>
+					</section>
+
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient">
+								Método de Población
+							</span>
+						</h3>
+						<ul>
+							<li
+								style="
+									display: flex;
+									align-items: center;
+									gap: 20px;
+								"
+							>
+								<img src="/dist/img/drizzle.jpeg" width="60" />
+								Drizzle
+								<p style="font-size: 1.8rem; opacity: 0.6">
+									(type safety + introspection)
+								</p>
+							</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient"
+								>Método de Población</span
+							>
+						</h3>
+						<ul>
+							<li
+								style="
+									display: flex;
+									align-items: center;
+									gap: 20px;
+								"
+							>
+								<img src="/dist/img/drizzle.jpeg" width="60" />
+								Drizzle
+								<p style="font-size: 1.8rem; opacity: 0.6">
+									(type safety + introspection)
+								</p>
+							</li>
+							<li
+								style="
+									display: flex;
+									align-items: center;
+									gap: 20px;
+								"
+							>
+								<img src="./dist/img/bun.svg" width="60" />
+								Bun
+								<p style="font-size: 1.8rem; opacity: 0.6">
+									(blazingly fast ⚡)
+								</p>
+							</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient"
+								>Método de Población</span
+							>
+						</h3>
+						<ul>
+							<li
+								style="
+									display: flex;
+									align-items: center;
+									gap: 20px;
+								"
+							>
+								<img src="/dist/img/drizzle.jpeg" width="60" />
+								Drizzle
+								<p style="font-size: 1.8rem; opacity: 0.6">
+									(type safety + introspection)
+								</p>
+							</li>
+							<li
+								style="
+									display: flex;
+									align-items: center;
+									gap: 20px;
+								"
+							>
+								<img src="./dist/img/bun.svg" width="60" />
+								Bun
+								<p style="font-size: 1.8rem; opacity: 0.6">
+									(blazingly fast ⚡)
+								</p>
+							</li>
+							<li
+								style="
+									display: flex;
+									align-items: center;
+									gap: 20px;
+								"
+							>
+								<img
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFX0lEQVR4nO2cW4hcRRCGjxe865rd6ZrdGMxDEryBUSMigoioD4IXRIJBDCKC4DUku6f/2YCMiC8iis8KEQ0YTMAY8YIoLLgzVWdxgyIR0ZA8iIJ5UCJr1KjJkZ5NlqzuzrnMTHqkq6HeZk71/F9XVZ++TESQVE28aRCp+OJ1ACoAKIDUtwgaAfAvhKYghGlaA6AAUt8iaATAvxCaghCmaQ2AAkh9i6ARAP9CaApCmKY1AAog9S2CRgD8C6EpCGGa1gAogNS3CBoB8C+EpiCEaVoDoABS3yJoBMC/EJqCEKZpDYACSH2LoBEA/0JoCkKYpjUACiD1LYJGAPwLoSkIYZrWACiA1LcIGgHwL4SmIIRpWgOgAFLfImgEwL8QmoIQpmkNgAJI+9EM5ICBfEmWp50Zy18R5AcCH+37CDCWH6Qa31rUKrVkzWJWtXxdkWcZNB8v1G/LR8jKhyZO1g9u5ouiRdpIffocY5s3EOT5WSB9CKDdDzhZrVJL1hQY7Tsrsawq6mPlkx+caWJ5jMAH+wrAyKbpSuS5VdC8OofwvxHkgU59jWDyYgJ/1jcAhuLG+ZHnRmNyZVvxLR+qxMmN3fJn6hPnGcsTfQFgeX3irMhzq9qpKzJG/73d9jlQm1xClr9RAFEUDVu5bPHRL29GPfR7LLWFHQFDceOSRfr3txlrrOilbwN+MXgAlVhWLTL6380nY3qKm25WrDxFVjZRLHcN1pMLsr5DkFED+cMrAAPebyzvy2sEGc0cVVZeKvJMY/m7BftXSx7J8lUdbRJBmv/5ruVfCLJhoe8MjzaXGysf/y+XIgz4uWwAvLU7vpLVmb7Au9o/Q56Z+3A9PdVYfoKszJTpT3AAaFyq7fy4NOPqRPvnuOWI5O7ZOsOTnfQnOABLa1NDbf2MNVbk6rOV35112p/gAJixqeF2fpZt5LOLTCMVAIqJMDTevDQLNoFfUAA9ioCKldujjObeYwx4m0ZAT2ZB/GyUs7nlCrKyV1NQ1EUAlvdFa7eflhdCVJ84vWplHUF2aw1AdwqfEzQq0Shu3kKWP9IijE7TkBzIeh/IXurmNwj8p86CUDoVvRN1Y73JyvZOIAT3HkDzIbzsFtA6BUFWbjPgPQoApSBsrY5+cW6nENzUlcBbNAJQIhrcLpZNro+60Azk0dYJC01BUhAEH3X53NR4ZacQCLxZAaB0XThMll9ze8rlEbQ2Zt7SIoxOirRbcub3yp6cGIobSw341yw/Qc+CKHeNkEYVfGfRGZOx8qoCQFdh7CbwPXkBVGK+SQGgFxErO/McPmsdXczYW9AUhNJpc1eeKCDI5woAbUdz7iMk/zZ3/rTTDf5wI8DKjIHU3GyFrHxf7jl8fw4AbTd2AgTA7oXrdSf88WdXYr6mzLESU+O12f2WtxUA5kCLu+ixkFDVuHlH6yWsQATlOYafdWwliAgw7rpRnKzPmsdX4+RmY/nHzOdZPlytyX1ZfW71G/JT8AAIvCXK2ZZt5EGy8jRZ+XoB4Q8ReIfbkOnGHYVgIoAsHxmKp66NCrbh8U/N8btpbm3IzeuLfN/9LgWAuZy9N/t0c/faEkwPkJWfFQBOjAbe4Q7TngwABvxKnugMIwVhnq9tl9f3nNFT8a08lPc+cXAAaHZW9MmJ7wHdbFXLD5OVv/L2JUgA1DI+6C5zdyslDWyYuDBv2lEAmAfiW3frpWyBnhVeaq2zRiUGQl9EAFl+310damfGctLbPsiMuz/mYJixxlVuCrrQEcbZJeZktdt8d5/vZDGvfwCgn82lKt5/7I86Sv8lgQKAb5AaAWk/mqYgKIDUtwgaAfAvhKYghGlaA+AXwD+5Dc8KcxP3dwAAAABJRU5ErkJggg=="
+									width="60"
+								/>
+								Typescript
+								<p style="font-size: 1.8rem; opacity: 0.6">
+									(porque si)
+								</p>
+							</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient"
+								>Método de Población</span
+							>
+						</h3>
+						<ul>
+							<li
+								style="
+									display: flex;
+									align-items: center;
+									gap: 20px;
+								"
+							>
+								<img src="/dist/img/drizzle.jpeg" width="60" />
+								Drizzle
+								<p style="font-size: 1.8rem; opacity: 0.6">
+									(type safety + introspection)
+								</p>
+							</li>
+							<li
+								style="
+									display: flex;
+									align-items: center;
+									gap: 20px;
+								"
+							>
+								<img src="./dist/img/bun.svg" width="60" />
+								Bun
+								<p style="font-size: 1.8rem; opacity: 0.6">
+									(blazingly fast ⚡)
+								</p>
+							</li>
+							<li
+								style="
+									display: flex;
+									align-items: center;
+									gap: 20px;
+								"
+							>
+								<img
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFX0lEQVR4nO2cW4hcRRCGjxe865rd6ZrdGMxDEryBUSMigoioD4IXRIJBDCKC4DUku6f/2YCMiC8iis8KEQ0YTMAY8YIoLLgzVWdxgyIR0ZA8iIJ5UCJr1KjJkZ5NlqzuzrnMTHqkq6HeZk71/F9XVZ++TESQVE28aRCp+OJ1ACoAKIDUtwgaAfAvhKYghGlaA6AAUt8iaATAvxCaghCmaQ2AAkh9i6ARAP9CaApCmKY1AAog9S2CRgD8C6EpCGGa1gAogNS3CBoB8C+EpiCEaVoDoABS3yJoBMC/EJqCEKZpDYACSH2LoBEA/0JoCkKYpjUACiD1LYJGAPwLoSkIYZrWACiA1LcIGgHwL4SmIIRpWgOgAFLfImgEwL8QmoIQpmkNgAJI+9EM5ICBfEmWp50Zy18R5AcCH+37CDCWH6Qa31rUKrVkzWJWtXxdkWcZNB8v1G/LR8jKhyZO1g9u5ouiRdpIffocY5s3EOT5WSB9CKDdDzhZrVJL1hQY7Tsrsawq6mPlkx+caWJ5jMAH+wrAyKbpSuS5VdC8OofwvxHkgU59jWDyYgJ/1jcAhuLG+ZHnRmNyZVvxLR+qxMmN3fJn6hPnGcsTfQFgeX3irMhzq9qpKzJG/73d9jlQm1xClr9RAFEUDVu5bPHRL29GPfR7LLWFHQFDceOSRfr3txlrrOilbwN+MXgAlVhWLTL6380nY3qKm25WrDxFVjZRLHcN1pMLsr5DkFED+cMrAAPebyzvy2sEGc0cVVZeKvJMY/m7BftXSx7J8lUdbRJBmv/5ruVfCLJhoe8MjzaXGysf/y+XIgz4uWwAvLU7vpLVmb7Au9o/Q56Z+3A9PdVYfoKszJTpT3AAaFyq7fy4NOPqRPvnuOWI5O7ZOsOTnfQnOABLa1NDbf2MNVbk6rOV35112p/gAJixqeF2fpZt5LOLTCMVAIqJMDTevDQLNoFfUAA9ioCKldujjObeYwx4m0ZAT2ZB/GyUs7nlCrKyV1NQ1EUAlvdFa7eflhdCVJ84vWplHUF2aw1AdwqfEzQq0Shu3kKWP9IijE7TkBzIeh/IXurmNwj8p86CUDoVvRN1Y73JyvZOIAT3HkDzIbzsFtA6BUFWbjPgPQoApSBsrY5+cW6nENzUlcBbNAJQIhrcLpZNro+60Azk0dYJC01BUhAEH3X53NR4ZacQCLxZAaB0XThMll9ze8rlEbQ2Zt7SIoxOirRbcub3yp6cGIobSw341yw/Qc+CKHeNkEYVfGfRGZOx8qoCQFdh7CbwPXkBVGK+SQGgFxErO/McPmsdXczYW9AUhNJpc1eeKCDI5woAbUdz7iMk/zZ3/rTTDf5wI8DKjIHU3GyFrHxf7jl8fw4AbTd2AgTA7oXrdSf88WdXYr6mzLESU+O12f2WtxUA5kCLu+ixkFDVuHlH6yWsQATlOYafdWwliAgw7rpRnKzPmsdX4+RmY/nHzOdZPlytyX1ZfW71G/JT8AAIvCXK2ZZt5EGy8jRZ+XoB4Q8ReIfbkOnGHYVgIoAsHxmKp66NCrbh8U/N8btpbm3IzeuLfN/9LgWAuZy9N/t0c/faEkwPkJWfFQBOjAbe4Q7TngwABvxKnugMIwVhnq9tl9f3nNFT8a08lPc+cXAAaHZW9MmJ7wHdbFXLD5OVv/L2JUgA1DI+6C5zdyslDWyYuDBv2lEAmAfiW3frpWyBnhVeaq2zRiUGQl9EAFl+310damfGctLbPsiMuz/mYJixxlVuCrrQEcbZJeZktdt8d5/vZDGvfwCgn82lKt5/7I86Sv8lgQKAb5AaAWk/mqYgKIDUtwgaAfAvhKYghGlaA+AXwD+5Dc8KcxP3dwAAAABJRU5ErkJggg=="
+									width="60"
+								/>
+								Typescript
+								<p style="font-size: 1.8rem; opacity: 0.6">
+									(porque si)
+								</p>
+							</li>
+							<li
+								style="
+									display: flex;
+									align-items: center;
+									gap: 20px;
+								"
+							>
+								<img src="./dist/img/faker.svg" width="60" />
+								Faker.js
+								<p style="font-size: 1.8rem; opacity: 0.6">
+									(mejor que Mockaroo)
+								</p>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- POPULATION ... -->
+				<section>
+					<section>
+						<h3 class="text-gradient">La Idea</h3>
+					</section>
+					<section>
+						<img src="/dist/img/populate.png" width="1000" />
+					</section>
+					<section>
+						<img src="/dist/img/populate0.png" width="1000" />
+					</section>
+					<section>
+						<img src="/dist/img/populate0.2.png" width="1000" />
+					</section>
+					<section>
+						<img src="/dist/img/populate.png" width="1000" />
+					</section>
+					<section>
+						<img src="/dist/img/populate0.3.png" width="1000" />
+					</section>
+					<section>
+						<img src="/dist/img/populate.png" width="1000" />
+					</section>
+					<section>
+						<img src="/dist/img/populate1.png" width="1000" />
+					</section>
+					<section>
+						<img src="/dist/img/erd.svg" width="850" />
+					</section>
+					<section>
+						<img src="/dist/img/dependency_tree.svg" width="1000" />
+					</section>
+					<section>
+						<img src="/dist/img/populate2.png" width="1000" />
+					</section>
+					<section data-auto-animate>
+						<img src="/dist/img/populate3.png" />
+					</section>
+				</section>
+
+				<!-- QUERYS -->
+				<section>
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient">Consultas</span> de
+							Negocio
+						</h3>
+					</section>
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient">Consultas</span> de
+							Negocio
+						</h3>
+						<section data-auto-animate data-markdown>
+							<textarea data-template>
+								```sql
+								-- ¿cuál es la lista de documentos disponibles 
+								-- en una colección específica?
+
+								select *
+								from document
+										 join collection_document on document.id_document = collection_document.id_document
+										 join collection on collection_document.id_collection = collection.id_collection
+								where collection.name_collection = 'colección de historia de cuba'
+								order by name_collection
+								limit 10;
+								```
+							</textarea
+							>
+						</section>
+						<section data-auto-animate data-markdown>
+							<textarea data-template>
+								```sql
+								-- cantidad de miembros estudiantes, investigadores, 
+								-- profesionales y extranjeros
+
+								select category, count(*)
+								from member
+								group by category;
+								```
+							</textarea
+							>
+						</section>
+					</section>
+				</section>
+
+				<!-- VIEWS -->
+				<section>
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient">Vistas</span> Realizadas
+						</h3>
+					</section>
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient">Vistas</span> Realizadas
+						</h3>
+						<section data-markdown>
+							<textarea data-template>
+								```sql
+								create view documents_from_collection_x as (
+									select document.*
+									from document
+											join collection_document on document.id_document = collection_document.id_document
+											join collection on collection_document.id_collection = collection.id_collection
+									where collection.name_collection = 'Colección de Historia de Cuba'
+								);
+								```
+							</textarea
+							>
+						</section>
+					</section>
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient">Vistas</span> Realizadas
+						</h3>
+						<section data-markdown>
+							<textarea data-template>
+								```sql
+								create view amount_document_patrimony_per_type as (
+									select type_document, count(*)
+									from document
+									where is_patrimony = true
+									group by type_document
+								);
+								```
+							</textarea
+							>
+						</section>
+					</section>
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient">Vistas</span> Realizadas
+						</h3>
+						<section data-markdown>
+							<textarea data-template>
+								```sql
+								create view students_age_average as (
+								select avg(age) as age_average
+								from member
+										join student on member.id_member = student.id_member
+								);
+								```
+							</textarea
+							>
+						</section>
+					</section>
+					<section data-auto-animate>
+						<h3>
+							<span class="text-gradient">Vistas</span> Realizadas
+						</h3>
+						<section data-markdown>
+							<textarea data-template>
+								```sql
+								-- el total de documentos en cada colección
+								-- ordenados por el nombre de la colección
+								create view total_per_collection as (
+									select c.name_collection, count(*) as amount_documents from collection c
+										join document_collection dc on dc.id_collection = c.id_collection
+										join document d on d.id_document = dc.id_document
+									group by c.name_collection
+									order by c.name_collection
+								)
+								```
+							</textarea
+							>
+						</section>
+					</section>
+				</section>
+
+				<!-- CONCLUSIONS -->
+				<section>
+					<section data-auto-animate>
+						<h3 class="text-gradient">Conclusiones</h3>
+					</section>
+					<section data-auto-animate>
+						<h3 class="text-gradient">Conclusiones</h3>
+						<ul>
+							<li>
+								Se ha proporcionado un mejor diseño de la BD que
+								evita la <b>redundancia</b> y garantiza la
+								<b>eficiencia</b>
+							</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<h3 class="text-gradient">Conclusiones</h3>
+						<ul>
+							<li>
+								Se ha proporcionado un mejor diseño de la BD que
+								evita la <b>redundancia</b> y garantiza la
+								<b>eficiencia</b>
+							</li>
+							<li>
+								Se presento una solución y forma de
+								<b>poblar</b> las tablas de manera realista y
+								eficiente
+								<p style="font-size: 1.8rem; opacity: 0.7">
+									(para hacer pruebas de rendimiento y mas)
+								</p>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h1>Gracias 👍</h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [
+					RevealMarkdown,
+					RevealHighlight,
+					RevealNotes,
+					RevealZoom,
+					RevealHighlight,
+					RevealSearch,
+				],
+			});
+		</script>
+	</body>
+</html>
